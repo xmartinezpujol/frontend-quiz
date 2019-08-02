@@ -26,8 +26,7 @@ const COLOR_PALETTE = {
   title: '#36424A',
 
   // Infrastructure
-  purewhite: '#FFF',
-  spacewhite: '#EDF2F2',
+  white: '#FFF',
   night: '#171717',
   positive: '#86D9C5',
   negative: '#EF8B8B',

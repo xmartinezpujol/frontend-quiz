@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 
 import Button from '../Button';
+import Text from '../Text';
 
-function Answer(props) {
+const Answer = (props) => {
   const [scored, setScore] = useState(null);
 
   const getBkgColor = () => {
@@ -26,16 +27,18 @@ function Answer(props) {
 
   return (
     <Button
+      noanim
       style={{
+        padding: '0 10px',
         color: 'white',
         backgroundColor: getBkgColor(),
         margin: '10px 0',
       }}
       onClick={checkAnswer}
     >
-      {props.option}
+      <Text type="h3.w">{props.option}</Text>
     </Button>
   );
-}
+};
 
 export default Answer;

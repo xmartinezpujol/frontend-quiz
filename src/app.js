@@ -1,15 +1,13 @@
 import React, { Fragment } from 'react';
-import Home from './containers/Home';
+import Quiz from './containers/Quiz';
 
-class App extends React.Component {
-  render() {
-    return (
-      <Fragment>
-        <Home />
-        <div id="modal" />
-      </Fragment>
-    );
-  }
+function App() {
+  return (
+    <Fragment>
+      <Quiz />
+      <div id="modal" />
+    </Fragment>
+  );
 }
 
 export default App;
