@@ -38,10 +38,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(paths.SRC, 'index.html'),
     }),
-    new ExtractTextPlugin('wasabi.styles.css'),
+    new ExtractTextPlugin('quiz.styles.css'),
   ],
   output: {
-    filename: 'wasabi_bundle.js',
+    filename: 'quiz_bundle.js',
     path: paths.DEPLOY,
     publicPath: '/',
   },
