@@ -4,7 +4,7 @@ import Quiz from './containers/Quiz';
 function App() {
   return (
     <Fragment>
-      <Quiz />
+      <Quiz navigation={false} />
       <div id="modal" />
     </Fragment>
   );

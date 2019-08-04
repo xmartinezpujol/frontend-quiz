@@ -94,6 +94,8 @@ const Text = (props) => {
       fontSize: 14,
       color: '#36424A',
       fontWeight: 900,
+      marginBlockStart: 0,
+      marginBlockEnd: 0,
       '& strong': { color: props.accentColor },
       '@media(min-width: 768px)': {
         fontSize: 14,

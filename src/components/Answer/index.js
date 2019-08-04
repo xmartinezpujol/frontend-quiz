@@ -23,16 +23,17 @@ const Answer = (props) => {
     } else {
       setScore(false);
     }
+    props.onSelect(props.id === props.correct);
   };
 
   return (
     <Button
       noanim
       style={{
-        padding: '0 10px',
+        padding: 10,
         color: 'white',
         backgroundColor: getBkgColor(),
-        margin: '10px 0',
+        margin: '2px 0',
       }}
       onClick={checkAnswer}
     >
