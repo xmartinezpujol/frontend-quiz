@@ -37,7 +37,7 @@ const Answer = (props) => {
       }}
       onClick={checkAnswer}
     >
-      <Text type="h3.w">{props.option}</Text>
+      <Text type="h4.w">{props.option}</Text>
     </Button>
   );
 };

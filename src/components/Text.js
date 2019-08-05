@@ -151,7 +151,7 @@ const Text = (props) => {
       },
     },
     'h4.w': {
-      fontSize: 10,
+      fontSize: 12,
       color: '#FFFFFF',
       fontWeight: 400,
       '@media(min-width: 768px)': {

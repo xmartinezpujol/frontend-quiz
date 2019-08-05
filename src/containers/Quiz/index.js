@@ -10,7 +10,7 @@ import {
 
 const PREV_QUESTION = 'prev';
 const NEXT_QUESTION = 'next';
-const TIME_TO_SWITCH_QUESTIONS = 3000;
+const TIME_TO_SWITCH_QUESTIONS = 1000;
 
 function Quiz(props) {
   const [currQuestion, setCurrQuestion] = useState(1);
