@@ -15,4 +15,4 @@ install:
   - npm ci
 
 script:
-  - npm run test && npm run teste2e
+  - npm run test
