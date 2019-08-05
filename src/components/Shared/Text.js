@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
 const Text = (props) => {
   const styles = {
@@ -252,11 +251,6 @@ const Text = (props) => {
       {props.children}
     </TextGenerator>
   );
-};
-
-Text.propTypes = {
-  accentColor: PropTypes.string,
-  type: PropTypes.string.isRequired,
 };
 
 export default Text;

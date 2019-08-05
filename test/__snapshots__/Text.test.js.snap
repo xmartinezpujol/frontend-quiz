@@ -4,11 +4,11 @@ exports[`Text h1 renders correctly 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "css-14cjhng",
+      "class": "Text__TextGenerator-tftq8x-0 jmQgyK",
     },
     "children": Array [
       Object {
-        "data": "I'm a title, trying to be descriptive!",
+        "data": "Im a title, trying to be descriptive!",
         "next": null,
         "parent": [Circular],
         "prev": null,
@@ -57,11 +57,11 @@ exports[`Text h2 renders correctly 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "css-lysq4l",
+      "class": "Text__TextGenerator-tftq8x-0 lgDfgk",
     },
     "children": Array [
       Object {
-        "data": "I'm a title, trying to be descriptive!",
+        "data": "Im a title, trying to be descriptive!",
         "next": null,
         "parent": [Circular],
         "prev": null,
@@ -110,11 +110,11 @@ exports[`Text h3 renders correctly 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "css-1ujrf7i",
+      "class": "Text__TextGenerator-tftq8x-0 kyNXMy",
     },
     "children": Array [
       Object {
-        "data": "I'm a title, trying to be descriptive!",
+        "data": "Im a title, trying to be descriptive!",
         "next": null,
         "parent": [Circular],
         "prev": null,
@@ -163,11 +163,11 @@ exports[`Text h4 renders correctly 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "css-1m0rikh",
+      "class": "Text__TextGenerator-tftq8x-0 guNumW",
     },
     "children": Array [
       Object {
-        "data": "I'm a title, trying to be descriptive!",
+        "data": "Im a title, trying to be descriptive!",
         "next": null,
         "parent": [Circular],
         "prev": null,
@@ -216,11 +216,11 @@ exports[`Text h5 renders correctly 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "css-ard4n3",
+      "class": "Text__TextGenerator-tftq8x-0 hVssnP",
     },
     "children": Array [
       Object {
-        "data": "I'm a title, trying to be descriptive!",
+        "data": "Im a title, trying to be descriptive!",
         "next": null,
         "parent": [Circular],
         "prev": null,
@@ -269,11 +269,11 @@ exports[`Text p1 renders correctly 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "css-3kq6q1",
+      "class": "Text__TextGenerator-tftq8x-0 eCalfo",
     },
     "children": Array [
       Object {
-        "data": "I'm a title, trying to be descriptive!",
+        "data": "Im a title, trying to be descriptive!",
         "next": null,
         "parent": [Circular],
         "prev": null,
@@ -322,11 +322,11 @@ exports[`Text p2 renders correctly 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "css-1i2z69e",
+      "class": "Text__TextGenerator-tftq8x-0 drZzcU",
     },
     "children": Array [
       Object {
-        "data": "I'm a title, trying to be descriptive!",
+        "data": "Im a title, trying to be descriptive!",
         "next": null,
         "parent": [Circular],
         "prev": null,
@@ -375,11 +375,11 @@ exports[`Text p3 renders correctly 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "css-1dad5y5",
+      "class": "Text__TextGenerator-tftq8x-0 hicMXE",
     },
     "children": Array [
       Object {
-        "data": "I'm a title, trying to be descriptive!",
+        "data": "Im a title, trying to be descriptive!",
         "next": null,
         "parent": [Circular],
         "prev": null,
@@ -428,11 +428,11 @@ exports[`Text p4 renders correctly 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "css-zwpz78",
+      "class": "Text__TextGenerator-tftq8x-0 beffmo",
     },
     "children": Array [
       Object {
-        "data": "I'm a title, trying to be descriptive!",
+        "data": "Im a title, trying to be descriptive!",
         "next": null,
         "parent": [Circular],
         "prev": null,
@@ -481,11 +481,11 @@ exports[`Text p5 renders correctly 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "css-16gau2z",
+      "class": "Text__TextGenerator-tftq8x-0 iQiStz",
     },
     "children": Array [
       Object {
-        "data": "I'm a title, trying to be descriptive!",
+        "data": "Im a title, trying to be descriptive!",
         "next": null,
         "parent": [Circular],
         "prev": null,
@@ -534,11 +534,11 @@ exports[`Text span renders correctly 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "css-qg0hta",
+      "class": "Text__TextGenerator-tftq8x-0 bMeXMk",
     },
     "children": Array [
       Object {
-        "data": "I'm a title, trying to be descriptive!",
+        "data": "Im a title, trying to be descriptive!",
         "next": null,
         "parent": [Circular],
         "prev": null,

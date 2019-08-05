@@ -1,60 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button renders correctly 1`] = `
-initialize {
-  "0": Object {
-    "attribs": Object {
-      "class": "css-5kp7wz",
-      "icon": "",
-      "type": "yellow",
-    },
-    "children": Array [
-      Object {
-        "data": "Button",
-        "next": null,
-        "parent": [Circular],
-        "prev": null,
-        "type": "text",
-      },
-    ],
-    "name": "button",
-    "namespace": "http://www.w3.org/1999/xhtml",
-    "next": null,
-    "parent": null,
-    "prev": null,
-    "root": Object {
-      "attribs": Object {},
-      "children": Array [
-        [Circular],
-      ],
-      "name": "root",
-      "namespace": "http://www.w3.org/1999/xhtml",
-      "next": null,
-      "parent": null,
-      "prev": null,
-      "type": "root",
-      "x-attribsNamespace": Object {},
-      "x-attribsPrefix": Object {},
-    },
-    "type": "tag",
-    "x-attribsNamespace": Object {
-      "class": undefined,
-      "icon": undefined,
-      "type": undefined,
-    },
-    "x-attribsPrefix": Object {
-      "class": undefined,
-      "icon": undefined,
-      "type": undefined,
-    },
-  },
-  "_root": [Circular],
-  "length": 1,
-  "options": Object {
-    "decodeEntities": true,
-    "normalizeWhitespace": false,
-    "withDomLvl1": true,
-    "xml": false,
-  },
+exports[`Button Style renders correctly for default 1`] = `
+.c0 {
+  font-family: Poppins,sans-serif;
+  margin: 0 10px;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 35px;
+  -webkit-transition: 0.25s cubic-bezier(0.17,0.67,0.52,0.97);
+  transition: 0.25s cubic-bezier(0.17,0.67,0.52,0.97);
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  background: #D4EE5E;
+  border: 0;
+  color: #424649;
+  font-size: 18px;
+  border-radius: 6px;
+  font-weight: 500;
+  min-width: initial;
+  text-transform: initial;
+  -webkit-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  transform: translateY(-1px);
 }
+
+.c0:hover:enabled {
+  box-shadow: 0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08);
+}
+
+.c0:focus {
+  outline: 0;
+}
+
+.c0:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c0:active:enabled {
+  -webkit-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  transform: translateY(1px);
+}
+
+.c0:hover {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.c0:hover:after {
+  bottom: -10px;
+}
+
+<button
+  className="c0"
+  color="#424649"
+  shape="default"
+  size="medium"
+  type="wasabi"
+>
+  Text
+</button>
 `;

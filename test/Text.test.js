@@ -2,18 +2,14 @@ import React from 'react';
 import { shallow, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
-import Text from '../src/components/Text';
+import Text from '../src/components/Shared/Text';
 
 configure({ adapter: new Adapter() });
 
 describe('Text', () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(
-      <Text type="h1">
-        {"I'm a title, trying to be descriptive!"}
-      </Text>,
-    );
+    wrapper = shallow(<Text type="h1">Im a title, trying to be descriptive!</Text>);
   });
   it('h1 renders correctly', () => {
     wrapper.setProps({ type: 'h1' });

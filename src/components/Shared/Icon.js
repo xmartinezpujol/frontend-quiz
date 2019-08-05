@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import COLOR_PALETTE from '../Constants';
+import COLOR_PALETTE from '../../Constants';
 
 const IconStyled = styled.i(
   {},

@@ -1,46 +1,40 @@
 import React from 'react';
+import renderer from 'react-test-renderer';
 import { shallow, configure } from 'enzyme';
-import serializer, { toHaveStyleRule } from 'jest-glamor-react';
+import 'jest-styled-components';
 import Adapter from 'enzyme-adapter-react-16';
 
-import Button from '../src/components/Button';
-
-expect.addSnapshotSerializer(serializer);
-expect.extend({ toHaveStyleRule });
+import Button from '../src/components/Shared/Button';
+import COLOR_PALETTE from '../src/Constants';
 
 configure({ adapter: new Adapter() });
 
 describe('Button', () => {
-  let wrapper;
-  beforeEach(() => {
-    wrapper = shallow(
-      <Button theme="default">
-        Button
-      </Button>,
-    );
-  });
-  it('renders correctly', () => {
-    expect(wrapper.render()).toHaveStyleRule('min-width', 'initial');
-    expect(wrapper.render()).toMatchSnapshot();
-  });
-  it('fullWidth Button should be at min-width 100%', () => {
-    wrapper.setProps({ fullWidth: true });
-    expect(wrapper.render()).toHaveStyleRule('min-width', '100%');
-  });
-  it('has no theme, should be default', () => {
-    wrapper.setProps({ theme: false });
-    expect(wrapper.render()).toHaveStyleRule('border', '0');
-    expect(wrapper.render()).toHaveStyleRule('color', 'black');
-  });
-  it('has icon, should render icon font classes', () => {
-    wrapper.setProps({
-      theme: false,
-      iconWeight: 700,
-      iconSize: 22,
-      iconWidth: 20,
-      iFont: 'fa',
-      icon: 'bomb',
+  beforeEach(() => {});
+  describe('Style', () => {
+    it('renders correctly for default', () => {
+      const tree = renderer.create(<Button>Text</Button>).toJSON();
+      expect(tree).toHaveStyleRule('min-width', 'initial');
+      expect(tree).toHaveStyleRule('border', '0');
+      expect(tree).toHaveStyleRule('color', COLOR_PALETTE.nori);
+      expect(tree).toMatchSnapshot();
     });
-    expect(wrapper.find('.fa').hasClass('fa-bomb'));
+    it('fullWidth should be at min-width 100%', () => {
+      const tree = renderer.create(<Button fullWidth>Text</Button>).toJSON();
+      expect(tree).toHaveStyleRule('min-width', '100%');
+    });
+    it('has icon, should render icon font classes', () => {
+      const wrapper = shallow(
+        <Button
+          iconWeight={700}
+          iconSize={22}
+          iconWidth={20}
+          iFont="fa"
+          icon="bomb"
+        >
+        Text
+        </Button>);
+      expect(wrapper.find('.fa').hasClass('fa-bomb'));
+    });
   });
 });

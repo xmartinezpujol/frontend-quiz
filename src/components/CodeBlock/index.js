@@ -11,7 +11,6 @@ function CodeBlock(props) {
   );
 }
 
-// Set default props
 CodeBlock.defaultProps = {
   language: 'javascript',
 };

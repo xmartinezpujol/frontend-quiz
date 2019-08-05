@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import Button from '../Button';
-import Text from '../Text';
+import Button from '../Shared/Button';
+import Text from '../Shared/Text';
 
 const Answer = (props) => {
   const [scored, setScore] = useState(null);

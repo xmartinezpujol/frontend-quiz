@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import COLOR_PALETTE from '../Constants';
+import COLOR_PALETTE from '../../Constants';
 
 const shape = {
   round: '200px',

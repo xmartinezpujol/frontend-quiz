@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import Answer from '../../components/Answer';
 import CodeBlock from '../../components/CodeBlock';
-import View from '../../components/View';
+import View from '../../components/Shared/View';
 
 export const StyledCardContainer = styled(View)`
   width: 100%;

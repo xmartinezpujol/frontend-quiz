@@ -4,11 +4,11 @@ exports[`View View renders correctly 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "css-1ysjyam",
+      "class": "View-sc-1gguiqf-0 beMvbp",
     },
     "children": Array [
       Object {
-        "data": "I'm just some text inside a viewport",
+        "data": "Im just some text inside a viewport",
         "next": null,
         "parent": [Circular],
         "prev": null,

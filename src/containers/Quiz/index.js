@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Questions from './../../data/questions';
-import Text from '../../components/Text';
-import View from '../../components/View';
+import Text from '../../components/Shared/Text';
+import View from '../../components/Shared/View';
 import QuizCard from '../QuizCard';
 
 import {
