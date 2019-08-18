@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "detail": "\n  ### Test?\n  ```js\n  (function() {\n    var a = b = 5;\n  })();\n  console.log(b);\n  ```\n  ",
+    "options":[
+      "undefined",
+      "5",
+      "error",
+      "Im a teapot"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 2,
+    "detail":"\n  ### What will log out here?\n  ```js\n  function test() {\n    console.log(a);\n    console.log(foo());\n\n    var a = 1;\n    function foo() {\n      return 2;\n    }\n  }\n  test();\n  ```\n  ",
+    "options":[
+      "undefined, undefined",
+      "1, 2",
+      "undefined, 2",
+      "1, undefined"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 3,
+    "detail":"\n  ### What is printed in the console?\n  ```js\n  var foo = function foo() {\n    console.log(foo === foo);  \n  };\n  foo();\n  ```\n  ",
+    "options":[
+      "true",
+      "false",
+      "ReferenceError",
+      "undefined"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 4,
+    "detail":"\n  ### What does the above alert?\n  ```js\n  function boo() {\n    return\n    {\n      test: 1\n    };\n  }\n  alert(typeof boo());\n  ```\n  ",
+    "options":[
+      "function",
+      "number",
+      "object",
+      "undefined"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 5,
+    "detail":"\n  ### What is the result?\n  ```js\n  Number(\"1\") - 1 == 0;\n  ```\n  ",
+    "options":[
+      "true",
+      "false",
+      "TypeError",
+      "NaN"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 6,
+    "detail":"\n  ### What is the result?\n  ```js\n  (true + false) > 2 + true;\n  ```\n  ",
+    "options":[
+      "true",
+      "false",
+      "TypesError",
+      "NaN"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 7,
+    "detail":"\n  ### What will be printed on the console?\n  ```js\n  function bar() {\n    return foo;\n    foo = 4;\n    function foo() {}\n    var foo = '5';\n  }\n  console.log(typeof bar());\n  ```\n  ",
+    "options":[
+      "number",
+      "function",
+      "undefined",
+      "string"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 8,
+    "detail":"\n  ### What is the result?\n  ```js\n  \"1\" - - \"1\";\n  ```\n  ",
+    "options":[
+      "0",
+      "2",
+      "11",
+      "\"11\""
+    ],
+    "correct": 1
+  },
+  {
+    "id": 9,
+    "detail":"\n  ### What is the result?\n  ```js\n  var fullname = 'John Doe';\nvar obj = {\n   fullname: 'Colin Ihrig',\n   prop: {\n      fullname: 'Aurelio De Rosa',\n      getFullname: function() {\n         return this.fullname;\n      }\n   }\n};\n\nconsole.log(obj.prop.getFullname());\n\nvar test = obj.prop.getFullname;\n\nconsole.log(test());\n  ```\n  ",
+    "options":[
+      "Aurelio De Rosa, undefined",
+      "Aurelio de Rosa, John Doe",
+      "undefined, undefined",
+      "Colin Ihrig, John Doe"
+    ],
+    "correct": 1
+  }
+]

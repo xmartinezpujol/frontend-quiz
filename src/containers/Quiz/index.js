@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Questions from './../../data/questions';
 import Text from '../../components/Shared/Text';
 import View from '../../components/Shared/View';
 import QuizCard from '../QuizCard';
@@ -16,8 +15,8 @@ function Quiz(props) {
   const [currQuestion, setCurrQuestion] = useState(1);
   const [score, setScore] = useState([]);
 
-  function getCurrentQuestion() {
-    return Questions.filter(question => question.id === currQuestion);
+  function getCurrentQuestion(questions) {
+    return questions.filter(question => question.id === currQuestion);
   }
 
   function setCurrentQuestion(direction) {
@@ -37,7 +36,7 @@ function Quiz(props) {
   function getScore() {
     return score.filter(point => point === 1).length;
   }
-
+  const { questions } = props;
   return (
     <View direction="column" align="center" type="rice">
       <View padding={10} type="rice">
@@ -51,7 +50,7 @@ function Quiz(props) {
             ◀
           </StyledArrow>
         }
-        {getCurrentQuestion().length === 0 &&
+        {getCurrentQuestion(questions).length === 0 && !!questions.length &&
           <View
             direction="column"
             width="100vw"
@@ -60,19 +59,18 @@ function Quiz(props) {
             justify="center"
           >
             <Text type="h1">
-              {`Your score: ${getScore()} / ${Questions.length}`}
+              {`Your score: ${getScore()} / ${questions.length}`}
             </Text>
-            <Text
+            <span
               role="img"
               aria-label="score"
-              type="span"
               style={{ fontSize: 24 }}
             >
               🎉
-            </Text>
+            </span>
           </View>
         }
-        {getCurrentQuestion().map(question => (
+        {getCurrentQuestion(questions).map(question => (
           <QuizCard
             key={`question-${question.id}`}
             question={question}
@@ -82,7 +80,7 @@ function Quiz(props) {
         {props.navigation &&
           <StyledArrow
             side="right"
-            disabled={currQuestion === Questions[Questions.length - 1].id}
+            disabled={currQuestion === questions[questions.length - 1].id}
             onClick={() => setCurrentQuestion(NEXT_QUESTION)}
             type="night"
           >

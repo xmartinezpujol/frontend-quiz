@@ -8,7 +8,7 @@ import View from '../../components/Shared/View';
 
 export const StyledCardContainer = styled(View)`
   width: 100%;
-  max-width: 300px;
+  width: 300px;
 `;
 
 function QuizCard(props) {

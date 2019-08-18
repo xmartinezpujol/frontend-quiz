@@ -27,7 +27,7 @@ const template = (props) => {
     default: {
       background: COLOR_PALETTE[props.type],
       border: 0,
-      color: COLOR_PALETTE.nori,
+      color: props.color ? props.color : COLOR_PALETTE.nori,
     },
     dynamic: {
       color: COLOR_PALETTE.purewhite,
@@ -110,7 +110,7 @@ const ButtonBox = styled.button(
     cursor: 'pointer',
     display: 'inline-flex',
     alignItems: 'center',
-    padding: '10px 35px',
+    padding: '0px 35px',
     transition: '0.25s cubic-bezier(0.17, 0.67, 0.52, 0.97)',
     WebkitTapHighlightColor: 'rgba(255, 255, 255, 0)',
     ':hover:enabled': {

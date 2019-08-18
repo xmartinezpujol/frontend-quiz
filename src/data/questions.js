@@ -114,6 +114,134 @@ const Questions = [
     options: ['0', '2', '11', '"11"'],
     correct: 1,
   },
+  {
+    id: 9,
+    detail: `
+  ### What is the result?
+  \`\`\`js
+  var fullname = 'John Doe';
+  var obj = {
+     fullname: 'Colin Ihrig',
+     prop: {
+        fullname: 'Aurelio De Rosa',
+        getFullname: function() {
+           return this.fullname;
+        }
+     }
+  };
+  
+  console.log(obj.prop.getFullname());
+  var test = obj.prop.getFullname;
+  console.log(test());
+  \`\`\`
+  `,
+    options: [
+      'Aurelio De Rosa, undefined',
+      'Aurelio de Rosa, John Doe',
+      'undefined, undefined',
+      'Colin Ihrig, John Doe',
+    ],
+    correct: 1,
+  },
+  {
+    id: 10,
+    detail: `
+  ### What will the below code print out?
+  \`\`\`js
+  "use strict";
+  var a = 1;
+  var b = {};
+  function foo(x, y) {
+    x = 2;
+    y.moo = 3;
+  }
+  
+  foo(a , b);
+  console.log("a = " + a + "; b = " + JSON.stringify(b));
+  \`\`\`
+  `,
+    options: ['a = 1; b = { "moo": 3 }', 'a = 1; b = {}', 'a = 2; b = {}', 'a = 2; b = { "moo": 3 }'],
+    correct: 0,
+  },
+  {
+    id: 11,
+    detail: `
+  ### What will the below code print out?
+  \`\`\`js
+  var foosVar = 3;
+  fooVar = 1;
+  console.log(fooVar);
+  \`\`\`
+  `,
+    options: ['1', 'error', 'undefined', '3'],
+    correct: 0,
+  },
+  {
+    id: 12,
+    detail: `
+  ### What will the below code print out?
+  \`\`\`js
+  "use strict";
+  var foosVar = 3;
+  fooVar = 1;
+  console.log(fooVar);
+  \`\`\`
+  `,
+    options: ['3', '1', 'undefined', 'error'],
+    correct: 3,
+  },
+  {
+    id: 13,
+    detail: `
+  ### What does the code below print out?
+  \`\`\`js
+  if (undefined == null) {
+    console.log("Moo");
+  } else {
+    console.log("Zoo");
+  }
+  \`\`\`
+  `,
+    options: ['Zoo', 'Moo', 'error'],
+    correct: 1,
+  },
+  {
+    id: 14,
+    detail: `
+  ### What does the code below print out?
+  \`\`\`js
+  console.log(typeof(null));
+  \`\`\`
+  `,
+    options: ['"null"', '"object"', 'exception'],
+    correct: 1,
+  },
+  {
+    id: 15,
+    detail: `
+  ### What does the code below print out?
+  \`\`\`js
+  if (undefined === null) {
+    console.log("Moo");
+  } else {
+    console.log("Zoo");
+  }
+  \`\`\`
+  `,
+    options: ['Moo', 'Zoo', 'exception'],
+    correct: 1,
+  },
+  {
+    id: 16,
+    detail: `
+  ### What does the code below print out?
+  \`\`\`js
+  console.log(NaN == "1");
+  \`\`\`
+  `,
+    options: ['true', 'false', 'undefined', 'error'],
+    correct: 1,
+  },
 ];
 
 export default Questions;
