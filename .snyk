@@ -1,0 +1,34 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - styled-components > babel-plugin-styled-components > @babel/helper-annotate-as-pure > @babel/types > lodash:
+        patched: '2019-08-18T08:58:47.627Z'
+    - styled-components > babel-plugin-styled-components > lodash:
+        patched: '2019-08-18T08:58:47.627Z'
+    - styled-components > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2019-08-18T08:58:47.627Z'
+    - styled-components > @babel/traverse > @babel/generator > lodash:
+        patched: '2019-08-18T08:58:47.627Z'
+    - styled-components > @babel/traverse > @babel/types > lodash:
+        patched: '2019-08-18T08:58:47.627Z'
+    - styled-components > babel-plugin-styled-components > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2019-08-18T08:58:47.627Z'
+    - styled-components > @babel/traverse > @babel/helper-function-name > @babel/types > lodash:
+        patched: '2019-08-18T08:58:47.627Z'
+    - styled-components > @babel/traverse > lodash:
+        patched: '2019-08-18T08:58:47.627Z'
+    - styled-components > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2019-08-18T08:58:47.627Z'
+    - styled-components > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-08-18T08:58:47.627Z'
+    - '@storybook/theming > @emotion/styled > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2019-08-18T08:58:47.627Z'
+    - styled-components > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-08-18T08:58:47.627Z'
+    - styled-components > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-08-18T08:58:47.627Z'
+    - '@storybook/theming > @emotion/core > @emotion/css > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2019-08-18T08:58:47.627Z'
