@@ -11,7 +11,7 @@ function App() {
 
   return (
     <View container direction="column" align="center">
-      <Quiz questions={questions.length ? questions : Questions} navigation={false} />
+      <Quiz data={questions.length ? questions : Questions} navigation={false} />
       <DatabaseLoader onDatabaseLoaded={data => setQuestions(data)} />
       <div id="modal" />
     </View>

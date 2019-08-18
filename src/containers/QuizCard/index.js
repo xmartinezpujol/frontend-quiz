@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { Suspense, useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 
 import Answer from '../../components/Answer';
 import CodeBlock from '../../components/CodeBlock';
+import Loader from '../../components/Shared/Loader';
 import View from '../../components/Shared/View';
 
 export const StyledCardContainer = styled(View)`
@@ -30,31 +31,33 @@ function QuizCard(props) {
     },
   } = props;
   return (
-    <StyledCardContainer
-      direction="column"
-      align="space-between"
-      justify="space-between"
-      type="white"
-      padding={10}
-      round={10}
-    >
-      <ReactMarkdown
-        source={detail}
-        renderers={{ code: CodeBlock }}
-      />
-      {options.map((option, index) => (
-        <Answer
-          key={`answer-${id}-${index}`}
-          id={index}
-          option={option}
-          correct={correct}
-          onSelect={(status) => {
-            setAttempt(tries + 1);
-            setStatus(status);
-          }}
+    <Suspense fallback={<Loader color="green" />}>
+      <StyledCardContainer
+        direction="column"
+        align="space-between"
+        justify="space-between"
+        type="white"
+        padding={10}
+        round={10}
+      >
+        <ReactMarkdown
+          source={detail}
+          renderers={{ code: CodeBlock }}
         />
-      ))}
-    </StyledCardContainer>
+        {options.map((option, index) => (
+          <Answer
+            key={`answer-${id}-${index}`}
+            id={index}
+            option={option}
+            correct={correct}
+            onSelect={(status) => {
+              setAttempt(tries + 1);
+              setStatus(status);
+            }}
+          />
+        ))}
+      </StyledCardContainer>
+    </Suspense>
   );
 }
 

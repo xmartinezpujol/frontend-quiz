@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
 import Text from '../../components/Shared/Text';
 import View from '../../components/Shared/View';
 import QuizCard from '../QuizCard';
@@ -11,13 +12,20 @@ const PREV_QUESTION = 'prev';
 const NEXT_QUESTION = 'next';
 const TIME_TO_SWITCH_QUESTIONS = 1000;
 
+const randomize = () => 0.5 - Math.random();
+
 function Quiz(props) {
   const [currQuestion, setCurrQuestion] = useState(1);
   const [score, setScore] = useState([]);
+  const [questions, setQuestions] = useState(() => props.data.sort(randomize));
+  const [isLoading, setLoader] = useState(true);
 
-  function getCurrentQuestion(questions) {
-    return questions.filter(question => question.id === currQuestion);
-  }
+  useEffect(() => {
+    // randomize questions onload
+    if (questions) {
+      setLoader(false);
+    }
+  }, [questions, isLoading]);
 
   function setCurrentQuestion(direction) {
     return direction === PREV_QUESTION
@@ -36,7 +44,7 @@ function Quiz(props) {
   function getScore() {
     return score.filter(point => point === 1).length;
   }
-  const { questions } = props;
+
   return (
     <View direction="column" align="center" type="rice">
       <View padding={10} type="rice">
@@ -50,7 +58,7 @@ function Quiz(props) {
             ◀
           </StyledArrow>
         }
-        {getCurrentQuestion(questions).length === 0 && !!questions.length &&
+        {questions && currQuestion === questions.length - 1 &&
           <View
             direction="column"
             width="100vw"
@@ -70,13 +78,14 @@ function Quiz(props) {
             </span>
           </View>
         }
-        {getCurrentQuestion(questions).map(question => (
+        {questions &&
           <QuizCard
-            key={`question-${question.id}`}
-            question={question}
+            isLoading={isLoading}
+            key={`question-${questions[currQuestion].id}`}
+            question={questions[currQuestion]}
             onCompleteQuestion={(id, tries) => handleScore(id, tries)}
           />
-        ))}
+        }
         {props.navigation &&
           <StyledArrow
             side="right"
