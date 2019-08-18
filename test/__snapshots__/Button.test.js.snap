@@ -13,7 +13,7 @@ exports[`Button Style renders correctly for default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 10px 35px;
+  padding: 0px 35px;
   -webkit-transition: 0.25s cubic-bezier(0.17,0.67,0.52,0.97);
   transition: 0.25s cubic-bezier(0.17,0.67,0.52,0.97);
   -webkit-tap-highlight-color: rgba(255,255,255,0);
