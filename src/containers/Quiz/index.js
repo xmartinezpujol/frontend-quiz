@@ -78,7 +78,7 @@ function Quiz(props) {
             </span>
           </View>
         }
-        {questions &&
+        {questions && currQuestion !== questions.length - 1 &&
           <QuizCard
             isLoading={isLoading}
             key={`question-${questions[currQuestion].id}`}
