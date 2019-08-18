@@ -12,7 +12,8 @@ cache:
 
 install:
   # use the new "ci" command for fastest installs on CI
+  - npm install -g codecov
   - npm ci
 
 script:
-  - npm run test
+  - npm run test && codecov
