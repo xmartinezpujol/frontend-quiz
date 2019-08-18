@@ -1,5 +1,6 @@
 # frontend-quizz
 [![Version](https://img.shields.io/github/package-json/v/xmartinezpujol/frontend-quizz/master?label=version)](https://github.com/xmartinezpujol/frontend-quizz)
+[![Known Vulnerabilities](https://snyk.io/test/github/xmartinezpujol/frontend-quizz/badge.svg)](https://snyk.io/test/github/xmartinezpujol/frontend-quizz)
 [![Build Status](https://travis-ci.org/xmartinezpujol/frontend-quizz.svg?branch=master)](https://travis-ci.org/xmartinezpujol/frontend-quizz)
 [![codecov](https://codecov.io/gh/xmartinezpujol/frontend-quizz/branch/master/graph/badge.svg)](https://codecov.io/gh/xmartinezpujol/frontend-quizz)
 [![Cypress.io tests](https://img.shields.io/badge/cypress.io-tests-green.svg?style=flat-square)](https://cypress.io)
