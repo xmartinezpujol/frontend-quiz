@@ -23,6 +23,7 @@ function Quiz(props) {
   useEffect(() => {
     // randomize questions onload
     if (questions) {
+      console.log(questions);
       setLoader(false);
     }
   }, [questions, isLoading]);
@@ -58,7 +59,7 @@ function Quiz(props) {
             ◀
           </StyledArrow>
         }
-        {questions && currQuestion === questions.length - 1 &&
+        {questions && currQuestion > questions.length &&
           <View
             direction="column"
             width="100vw"
@@ -78,11 +79,11 @@ function Quiz(props) {
             </span>
           </View>
         }
-        {questions && currQuestion !== questions.length - 1 &&
+        {questions && currQuestion <= questions.length &&
           <QuizCard
             isLoading={isLoading}
-            key={`question-${questions[currQuestion].id}`}
-            question={questions[currQuestion]}
+            key={`question-${questions[currQuestion - 1].id}`}
+            question={questions[currQuestion - 1]}
             onCompleteQuestion={(id, tries) => handleScore(id, tries)}
           />
         }
