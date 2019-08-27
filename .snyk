@@ -32,3 +32,17 @@ patch:
         patched: '2019-08-18T09:42:59.400Z'
     - '@storybook/theming > @emotion/core > @emotion/css > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
         patched: '2019-08-18T09:42:59.400Z'
+    - semantic-ui-react > lodash:
+        patched: '2019-08-27T14:00:40.337Z'
+    - wasabi-kit > styled-components > @babel/traverse > lodash:
+        patched: '2019-08-27T14:00:40.337Z'
+    - wasabi-kit > styled-components > babel-plugin-styled-components > lodash:
+        patched: '2019-08-27T14:00:40.337Z'
+    - wasabi-kit > styled-components > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2019-08-27T14:00:40.337Z'
+    - wasabi-kit > styled-components > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-08-27T14:00:40.337Z'
+    - wasabi-kit > styled-components > babel-plugin-styled-components > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2019-08-27T14:00:40.337Z'
+    - wasabi-kit > styled-components > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-08-27T14:00:40.337Z'
