@@ -1,8 +1,7 @@
 import React, { useCallback, useState, useEffect } from 'react';
+import { Button } from 'wasabi-kit/lib';
 import { useDropzone } from 'react-dropzone';
 import Container, { DbLoaderWrapper } from './styles';
-
-import Button from '../../components/Shared/Button';
 
 function DatabaseLoader(props) {
   const [file, setFile] = useState([]);

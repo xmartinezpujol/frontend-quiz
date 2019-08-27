@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Button from '../../components/Shared/Button';
+import { Button } from 'wasabi-kit/lib';
 
-export const StyledArrow = styled(Button)`
+const StyledArrow = styled(Button)`
   position: absolute;
   top: 10px;
   ${props => props.side}: 0;
@@ -11,3 +11,5 @@ export const StyledArrow = styled(Button)`
   padding: 10px;
   justify-content: center;
 `;
+
+export default StyledArrow;

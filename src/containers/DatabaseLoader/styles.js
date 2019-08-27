@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import View from '../../components/Shared/View';
+import { View } from 'wasabi-kit/lib';
 
 const getColor = (props) => {
   if (props.isDragAccept) {

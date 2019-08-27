@@ -1,11 +1,10 @@
 import React, { Suspense, useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
+import { Loader, View } from 'wasabi-kit/lib';
 
 import Answer from '../../components/Answer';
 import CodeBlock from '../../components/CodeBlock';
-import Loader from '../../components/Shared/Loader';
-import View from '../../components/Shared/View';
 
 export const StyledCardContainer = styled(View)`
   width: 100%;
@@ -36,7 +35,7 @@ function QuizCard(props) {
         direction="column"
         align="space-between"
         justify="space-between"
-        type="white"
+        type="purewhite"
         padding={10}
         round={10}
       >

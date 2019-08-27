@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
-import Button from '../Shared/Button';
-import Text from '../Shared/Text';
+import { Button, Text } from 'wasabi-kit/lib';
 
 const Answer = (props) => {
   const [scored, setScore] = useState(null);

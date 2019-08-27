@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+
+import { View } from 'wasabi-kit/lib';
+
 import Quiz from './containers/Quiz';
 import DatabaseLoader from './containers/DatabaseLoader';
-
 import Questions from './data/questions';
-
-import View from './components/Shared/View';
 
 function App() {
   const [questions, setQuestions] = useState([]);

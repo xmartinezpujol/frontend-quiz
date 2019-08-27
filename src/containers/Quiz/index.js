@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-import Text from '../../components/Shared/Text';
-import View from '../../components/Shared/View';
+import { Text, View } from 'wasabi-kit/lib';
 import QuizCard from '../QuizCard';
 
-import {
-  StyledArrow,
-} from './styles';
+import StyledArrow from './styles';
 
 const PREV_QUESTION = 'prev';
 const NEXT_QUESTION = 'next';
@@ -23,7 +20,6 @@ function Quiz(props) {
   useEffect(() => {
     // randomize questions onload
     if (questions) {
-      console.log(questions);
       setLoader(false);
     }
   }, [questions, isLoading]);
