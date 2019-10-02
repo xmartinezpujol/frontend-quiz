@@ -16,7 +16,7 @@
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0",
     "snyk": "^1.227.0",
-    "styled-components": "^4.2.1",
+    "styled-components": "^4.4.0",
     "styled-theming": "^2.2.0",
     "wasabi-kit": "^1.3.0"
   },
