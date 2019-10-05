@@ -26,8 +26,6 @@
     "test": "jest --env=jsdom --coverage",
     "teste2e": "cypress open",
     "test:output": "jest --json --outputFile=.jest-test-results.json",
-    "storybook": "start-storybook -p 6006 -s ./public",
-    "build-storybook": "build-storybook",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },
