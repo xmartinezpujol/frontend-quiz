@@ -12,13 +12,13 @@ A React app to test Frontend questions like a Quiz
 
 <img alt="Frontend Quiz" src="https://raw.githubusercontent.com/xmartinezpujol/frontend-quizz/master/public/img/quizApp.png" width="350" />
 
-##Motivation
+## Motivation
 
 In technical interviews it's pretty common to face quiz-like rounds of your programming language of choice. The idea behind frontend-quiz is to help you practice on a daily basis this exercises in a constant and practical way.
 
 It started as a way to improve in JS questions but this can be extended to other languages and even become a generic Trivia Quiz!
 
-##Future Plans
+## Future Plans
 
 My time is currently limited so I'm just adding some new questions from time to time, but my idea is to keep adding new features. Feel free to contribute with ideas also!
 
@@ -27,7 +27,7 @@ My time is currently limited so I'm just adding some new questions from time to 
 * Import/Export JSON files for Quiz data. That way maybe we can allow users to create their own tests and share them with friends.
 * Keep it Offline. Simplicity, no data consumption, blazing fast.
 
-##Getting Started
+## Getting Started
 
 ### Client localhost (http://localhost:5000)
 Node/NPM required to install dependencies.
@@ -66,6 +66,6 @@ npm run test
 npm run teste2e
 ```
 
-##Contributing
+## Contributing
 
 This is an open-source project and will stay that way forever. If you want to contribute, feel free to open a Issue/PR explaining your idea or contribute to existing issues. Thank you!
