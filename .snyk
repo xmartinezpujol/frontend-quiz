@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
+version: v1.22.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -46,3 +46,55 @@ patch:
         patched: '2019-08-27T14:00:40.337Z'
     - wasabi-kit > styled-components > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
         patched: '2019-08-27T14:00:40.337Z'
+  SNYK-JS-LODASH-567746:
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - snyk > inquirer > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - styled-components > @babel/traverse > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - styled-components > babel-plugin-styled-components > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - styled-components > @babel/traverse > @babel/generator > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - wasabi-kit > styled-components > @babel/traverse > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - wasabi-kit > styled-components > babel-plugin-styled-components > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - styled-components > babel-plugin-styled-components > @babel/helper-annotate-as-pure > @babel/types > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - wasabi-kit > styled-components > @babel/traverse > @babel/generator > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - styled-components > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - wasabi-kit > styled-components > babel-plugin-styled-components > @babel/helper-annotate-as-pure > @babel/types > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - wasabi-kit > styled-components > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - styled-components > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - wasabi-kit > styled-components > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - snyk > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - snyk > snyk-config > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - snyk > snyk-mvn-plugin > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+    - snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash:
+        patched: '2022-01-17T14:18:28.508Z'
+  SNYK-JS-TREEKILL-536781:
+    - snyk > snyk-sbt-plugin > tree-kill:
+        patched: '2022-01-17T14:18:28.508Z'
